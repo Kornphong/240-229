@@ -1,0 +1,8 @@
+FROM nginx
+
+COPY ./index.html /usr/share/nginx/html/index.html
+COPY ./main.css /usr/share/nginx/html/main.css
+COPY ./images/batman.jpg /usr/share/nginx/html/images/batman.jpg
+COPY ./app.js /usr/share/nginx/html/app.js
+
+WORKDIR /usr/share/nginx/html
